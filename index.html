@@ -7,13 +7,23 @@
 </head>
 <body>
 
+    <script>
+let count = 0;
+
+function addCharacter() {
+    count++;
+    document.getElementById("character-count").innerText =
+        "Characters: " + count;
+}
+</script>
+
     <h1>Creative IP Manager</h1>
 
-    <p>Characters: 0</p>
+<p id="character-count">Characters: 0</p>
     <p>Illustrations: 0</p>
     <p>Series: 0</p>
 
-    <button>Add Character</button>
+<button onclick="addCharacter()">Add Character</button>
 
 </body>
 </html>
